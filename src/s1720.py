@@ -25,3 +25,21 @@ def noncompliant():
 
 def test_values(a, b):
     assert (a, b)  # Noncompliant
+
+
+### PR Test
+def add_numbers2(a, b):
+    """
+    Adds two numbers and returns the result.
+    """
+    return a + b
+
+def add_numbers3(a, b):
+    """
+    Adds two numbers and returns the result.
+    """
+    return a - b
+
+def noncompliant2():
+    ls = [1, 2, 3]
+    foo(ls[3])  # Noncompliant
